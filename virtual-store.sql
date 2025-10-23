@@ -13,3 +13,9 @@ Product_Name VARCHAR(100) NOT NULL,
 Brand VARCHAR(100) NOT NULL,
 Price DECIMAL(10,2) NULL
 );
+CREATE TABLE IF NOT EXISTS invoices(
+Invoice_Id INT auto_increment  PRIMARY KEY,
+User_Id INT NOT NULL,
+Product_Id INT NOT NULL,
+Total_Price DECIMAL(10,2) NOT NULL
+);
